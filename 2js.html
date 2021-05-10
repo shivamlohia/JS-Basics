@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Var and String functions</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate molestiae debitis sit aperiam magnam ratione modi voluptates id. Qui libero unde explicabo eligendi assumenda doloremque fugit. Cupiditate rem eum ex!</p>
+    <script>
+        var num1 = 123
+        var num2 = 234
+        console.log("Num1 + Num2 = " + (num1 + num2))
+        console.log("Num1 * Num2 = " + (num1 * num2))
+        console.log("Num1 / Num2 = " + (num1 / num2))
+        console.log("num1++ = " + num1++)
+        console.log("++num2 = " + ++num2)
+        var str = "Hello"
+        console.log(str)
+        var name = 'Mr. Xyz'
+        var temp = `${str} there ${name}`
+        console.log(temp)
+        console.log(str.indexOf('l')) //first index
+        console.log(str.lastIndexOf('l'))
+
+        //substring
+        var substr1 = str.slice(1,3);
+        //slice takes in negative values as well
+        console.log(substr1)
+
+        //replace
+        var n = str.replace('Hello','Hi')
+        console.log(n);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //trim function removes extra spaces
+        //charAt same as java
+        //charCodeAt returns ascii code
+    </script>
+</body>
+</html>
