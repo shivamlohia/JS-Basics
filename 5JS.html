@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth JS</title>
+</head>
+<body>
+    <ul>
+        <li>For Loops</li>
+        <ul>
+            <li>For</li>
+            <li>For each</li>
+            <li>For of</li>
+            <li>For in</li>
+        </ul>
+        <li>While, Do-While</li>
+    </ul>
+</body>
+<script>
+    let names = ["Abc", "Bcd", "Cde", "Def", "Efg"];
+    for(let i = 0 ; i < names.length ; ++i)
+        console.log("Hello " + names[i]);
+    
+    names.forEach(function greet(name)
+    {
+        console.log("Hi " + name);
+    })
+
+    for(name of names)
+    {
+        console.log("Hey " + name);
+    }
+    let student = 
+    {
+        name: "Shivam",
+        age: 25,
+        subject: "CSE"
+    }
+    for(key in student)
+    {
+        console.log(`The ${key} of student is ${student[key]}`);
+    }
+    let i = 0;
+    while(i < 4)
+    {
+        console.log(i++);
+    }
+    do
+    {
+        console.log(i++);
+    }while(i < 4);
+</script>
+</html>
