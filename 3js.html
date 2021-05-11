@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third JS</title>
+</head>
+<body>
+    <ul>
+        <li>If else</li>
+        <li>Switch</li>
+        <li>Array</li>
+        <li>Objects</li>
+        <li>Functions</li>
+    </ul>
+    
+    <script>
+        let age = 20;
+        if(age > 20)
+            console.log("Legal age");
+        else if(age >= 18)
+            console.log("Adult age");
+        else
+            console.log("Minor");
+        switch(age)
+        {
+            case 10: console.log("Age 10");
+                break;
+            case 20: console.log("Age is 20");
+                break;
+            default: console.log("Not 10 and 20");
+                break;
+        }
+
+        //Object
+        let person = {
+            name: "Name",
+            age: 25,
+            occupation: "Service",
+            "date of birth": "01/04/1996"
+        }
+        console.log(person['date of birth']);
+        console.log(person.name);
+
+        let arr = new Array(1,2,6,5,8,3,4,5);
+        console.log(arr.push(7));
+        arr.sort();
+        console.log(arr);
+
+        //Functions
+        function greet(name = "there")
+        {
+            console.log("Hello " + name);
+        }
+        greet(person.name);
+        greet("Shivam");
+        greet();
+    </script>
+</body>
+</html>
