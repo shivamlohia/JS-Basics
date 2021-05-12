@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<style>
+    #btn
+    {
+        color: brown;
+    }
+</style>
+<body>
+    <h1>Heading</h1>
+    <p id = "para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet in dicta voluptatem ea esse? Voluptates odio tempore, maxime reiciendis nemo asperiores temporibus libero, eos officiis ex earum architecto dolore! Vitae quo rem esse fugiat est nesciunt, cum, error animi aspernatur beatae exercitationem aliquid dolor reiciendis pariatur. Mollitia quos totam alias tenetur unde sunt in incidunt. Ducimus aliquid maiores enim ad alias, vero tempora. Quaerat perferendis aperiam voluptate atque dolorem tenetur totam quod. Adipisci quisquam quaerat sit eligendi asperiores corrupti aliquam laboriosam quia harum eum! Pariatur voluptas fugit autem culpa distinctio eum, sequi assumenda excepturi aperiam natus repudiandae quia facilis qui?</p>
+    <br>
+    <button id="btn" onclick= "hide()">Hide</button>
+</body>
+<script>
+    function hide()
+    {
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+        if(para.style.display != 'none')
+        {
+            para.style.display = 'none';
+            alert("Hidden");
+            btn.innerHTML = "Show";
+        }
+        else
+        {
+            para.style.display = 'block';
+            alert("Shown");
+            btn.innerHTML = "Hide";
+        }
+    }
+</script>
+</html>
