@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout Clear Timeout</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <div class="btn">
+        <button onclick = "clearTmOut()">Clear Time Out</button>
+    </div>
+    <div class="container">
+        Time : <span id="time"></span>
+    </div>
+</body>
+    <script>
+        function greet()
+        {
+            console.log("Hello");
+        }
+        timeOut = setTimeout(greet, 5000);
+        setTimeout(() => {
+            console.log("Hi");
+        });
+        function clearTmOut()
+        {
+            clearTimeout(timeOut);
+        }
+
+        //interID = setInterval(greet, 1000);
+        //clearInterval(interID);
+
+        function displayTime()
+        {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 60000);
+    </script>
+</html>
